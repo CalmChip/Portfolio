@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="fullScreen">
+      <div class="loginContain">
+        <h1 class="title">Welcome</h1>
+        <form class="formulaire">
+          <div class="input success">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <span class="mess">Valid email</span>
+          </div>
+          <div class="input error">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <span class="mess">Incorrect password</span>
+          </div>
+          <div class="button">
+            <button type="submit" class="loginButton">Login</button>
+            <button type="reset" class="loginButton">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- error et success peuvent etre remplacer par des variables pour controller affichage-->

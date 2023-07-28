@@ -1,34 +1,34 @@
 module.exports = {
-    isAuthorized: function (requete, reponse, next) {
-      if (requete.isAuthenticated()) {
+    isAuthorized: function (request, response, next) {
+      if (request.isAuthenticated()) {
         return next();
       } else {
-        requete.flash(
+        request.flash(
           "error_msg",
           "You must be logged in  to access this page."
         );
-        reponse.redirect("/");
+        response.redirect("/");
       }
     },
-    isAdmin: function (requete, reponse, next) {
-      if (requete.isAuthenticated()) {
-        const rolesUser = requete.user.roles;
+    isAdmin: function (request, response, next) {
+      if (request.isAuthenticated()) {
+        const rolesUser = request.user.roles;
         const admin = rolesUser.find((role) => role == "admin");
         if (admin) {
           return next();
         } else {
-          requete.flash(
+          request.flash(
             "error_msg",
             "Authentication failed, only admin can access this page"
           );
-          reponse.redirect("/");
+          response.redirect("/");
         }
       } else {
-        requete.flash(
+        request.flash(
           "error_msg",
           "You must be logged in  to access this page."
         );
-        reponse.redirect("/");
+        response.redirect("/");
       }
     },
   };
