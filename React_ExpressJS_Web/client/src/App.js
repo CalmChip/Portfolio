@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from "./logo.svg"
 import "./App.css";
+import Counter from "./pages/Counter";
+import Home from "./pages/home";
 
 class App extends React.Component {
   constructor(props) {
@@ -22,11 +24,12 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        <header className='App-Header'>
+        <Home />
+    {/*     <header className='App-Header'>
           <img src={logo} className='App-logo' alt='logo' />
           <h1 className='App-title'>Welcome to React</h1>
         </header>
-        <p className='App-intro'>{this.state.apiResponse}</p>
+        <p className='App-intro'>{this.state.apiResponse}</p> */}
       </div>
     )
   }
