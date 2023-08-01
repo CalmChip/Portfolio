@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Routes, Route }
+    from 'react-router-dom';
 import logo from "./logo.svg"
 import "./App.css";
 import Counter from "./pages/Counter";
 import Home from "./pages/home";
+import Login from "./pages/login";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,14 +26,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='App'>
-        <Home />
-    {/*     <header className='App-Header'>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/login' element={<Login />}/>
+        </Routes>
+        {/*     <header className='App-Header'>
           <img src={logo} className='App-logo' alt='logo' />
           <h1 className='App-title'>Welcome to React</h1>
         </header>
         <p className='App-intro'>{this.state.apiResponse}</p> */}
-      </div>
+      </Router>
     )
   }
 }
