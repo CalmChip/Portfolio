@@ -19,6 +19,9 @@ const home = () => {
                             <a class="nav-link" href="/login">Login</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/cart">Cart</a>
+                        </li>
+                        <li class="nav-item">
                             <button class="nav-link disabled">Disabled</button>
                         </li>
                     </ul>
@@ -40,6 +43,9 @@ const home = () => {
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cart">Cart</a>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-link disabled">Disabled</button>

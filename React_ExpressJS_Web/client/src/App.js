@@ -5,6 +5,7 @@ import "./App.css";
 import Counter from "./pages/Counter";
 import Home from "./pages/home";
 import Login from "./pages/login";
+import Cart from "./pages/FakeCart";
 
 class App extends React.Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class App extends React.Component {
           <Route path="/" element={<Home />} />
           <Route path='/login' element={<Login />}/>
           <Route path='/counter' element={<Counter />}/>
+          <Route path='/cart' element={<Cart />}/>
         </Routes>
         {/*     <header className='App-Header'>
           <img src={logo} className='App-logo' alt='logo' />
