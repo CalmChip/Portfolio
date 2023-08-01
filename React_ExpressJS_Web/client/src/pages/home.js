@@ -52,7 +52,7 @@ const home = () => {
                         <img src={bannerProg} class="img2" alt='bannerProg' />
                         <p style={{fontWeight: "bolder"}}>Web developement</p>
                         <p style={{fontWeight: "bold"}}>AEC graduate at Collège Lionel-Groulx in web developement.
-                            This collegial degree taught me how to develop a fullstack web application and much much more!
+                            This collegial degree taught me how to develop a fullstack web application and much, much more!
                             If you wish to learn more, please contact me on my phone number: 450-508-9133.
                         </p>
                     </div>
