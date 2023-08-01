@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route }
     from 'react-router-dom';
-import logo from "./logo.svg"
 import "./App.css";
 import Counter from "./pages/Counter";
 import Home from "./pages/home";
@@ -30,6 +29,7 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/login' element={<Login />}/>
+          <Route path='/counter' element={<Counter />}/>
         </Routes>
         {/*     <header className='App-Header'>
           <img src={logo} className='App-logo' alt='logo' />

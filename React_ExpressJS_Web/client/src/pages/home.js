@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import JBpic from "../images/JBpic.jpg";
+import bannerProg from "../images/bannerProg.jpg";
 
 const home = () => {
     return (
@@ -12,13 +13,13 @@ const home = () => {
                 <div class="container-fluid">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="/">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/login">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
+                            <button class="nav-link disabled">Disabled</button>
                         </li>
                     </ul>
                 </div>
@@ -31,32 +32,32 @@ const home = () => {
                         <img src={JBpic} class="fakeimg" alt='logo' />
                         <p class="webDev">Web developer</p>
                         <p>Javascript, HTML, CSS, React</p>
-                        <h3 class="mt-4">Some Links</h3>
-                        <p>Some links using bootstrap</p>
+                        <h3 class="mt-4">Some Links example</h3>
+                        <p>Some links using bootstrap, they will lead you through some example. </p>
                         <ul class="nav nav-pills flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link active" href="/">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/login">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Disabled</a>
+                                <a class="nav-link" href="/login">Parralax</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link disabled">Disabled</button>
                             </li>
                         </ul>
                         <hr class="d-sm-none" />
                     </div>
                     <div class="col-sm-8">
-                        <h2>TITLE HEADING</h2>
-                        <h5>Title description, Dec 7, 2020</h5>
-                        <div class="fakeimg">Fake Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                        <h2 class="mt-5">TITLE HEADING</h2>
-                        <h5>Title description, Sep 2, 2020</h5>
-                        <div class="fakeimg">Fake Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <h2>Web languages</h2>
+                        <img src={bannerProg} class="img2" alt='bannerProg' />
+                        <p style={{fontWeight: "bolder"}}>Web developement</p>
+                        <p style={{fontWeight: "bold"}}>AEC graduate at Collège Lionel-Groulx in web developement.
+                            This collegial degree taught me how to develop a fullstack web application and much much more!
+                            If you wish to learn more, please contact me on my phone number: 450-508-9133.
+                        </p>
                     </div>
                 </div>
             </div>
