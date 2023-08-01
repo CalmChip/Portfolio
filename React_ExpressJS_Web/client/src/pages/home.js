@@ -1,23 +1,21 @@
 import React, { useState } from "react";
+import JBpic from "../images/JBpic.jpg";
 
 const home = () => {
     return (
         <div>
             <div class="p-5 bg-primary text-white text-center">
                 <h1>My Portoflio</h1>
-                <p>Resize this responsive page to see the effect!</p> 
+                <p>Resize this responsive bootstrap page to see the effect.</p> 
             </div>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <div class="container-fluid">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Active</a>
+                            <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="/login">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#">Disabled</a>
@@ -30,19 +28,17 @@ const home = () => {
                     <div class="col-sm-4">
                         <h2>About Me</h2>
                         <h5>Photo of me:</h5>
-                        <div class="fakeimg">Fake Image</div>
-                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                        <img src={JBpic} class="fakeimg" alt='logo' />
+                        <p class="webDev">Web developer</p>
+                        <p>Javascript, HTML, CSS, React</p>
                         <h3 class="mt-4">Some Links</h3>
-                        <p>Lorem ipsum dolor sit ame.</p>
+                        <p>Some links using bootstrap</p>
                         <ul class="nav nav-pills flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Active</a>
+                                <a class="nav-link active" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="/login">Login</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled" href="#">Disabled</a>
@@ -65,7 +61,7 @@ const home = () => {
                 </div>
             </div>
             <div class="mt-5 p-4 bg-dark text-white text-center">
-                <p>Footer</p>
+                <p>Made by: Jean-Bernard Le Blanc</p>
             </div>
         </div>
     );
