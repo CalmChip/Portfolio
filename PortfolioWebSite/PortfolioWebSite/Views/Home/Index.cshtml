@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="homePageContainer">
+    <h1 class="display-4">Welcome</h1>
+    <div class="card backgroundHomePage">
+        <img src="~/Images/JBPic.jpg" alt="Picture" class="DevPic" />
+        <p>My name is Jean-Bernard Le Blanc and I am a web developper.</p>
+        <p>Feel free to contact me here <a asp-area="" asp-controller="Home" asp-action="ContactMe" class="link-primary">Contact me</a></p>
+        <div>
+            <p style="font-weight: bolder;">About me</p>
+            <p>Fullstack web developper. C#, Javascript, HTML, CSS, React, PhP.</p>
+            <p>I am passionate about learning new languages, framework or anything computer related.</p>
+        </div>
+    </div>
+    <div class="card">
+        <a asp-controller ="UserManager" asp-action="Index" class="btn btn-secondary" style="width:150px">Test User</a>
+    </div>
+</div>

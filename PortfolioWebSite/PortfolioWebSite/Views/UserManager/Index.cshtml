@@ -1,0 +1,21 @@
+﻿@model IEnumerable<UserManagers>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h1>Welcome</h1>
+
+    @foreach (var obj in Model)
+    {
+        <div class="border p-3 mt-4">
+            <p>User name: @obj.UserName</p>
+            <p>Email: @obj.Email</p>
+        </div>
+    }
+
+    <a asp-controller="UserManager" asp-action="Create" class="btn btn-secondary" style="width:150px">
+       Register
+    </a>
+</div>
